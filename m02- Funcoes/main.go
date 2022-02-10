@@ -13,8 +13,8 @@ func sum(a, b int /*Em vez de a int, b int por ser do msm tipo*/) int {
 	return a + b
 } /*
 Essas funções só podem ser usados nesse mesmo pacote
-para usar em outros deve exporta mudando a letra inicial do nome da função
-para maiúsculo
+para usar em outros pacotes deve exporta mudando a letra inicial
+do nome da função para maiúsculo
 */
 
 func convertAndSum(a int, b string) (total int, err error) {
