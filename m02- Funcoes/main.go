@@ -5,6 +5,15 @@ import (
 	"strconv"
 )
 
+func main() {
+	hello("Mateus Ramos")
+
+	fmt.Println("Soma:", sum(12, 20))
+
+	total, err := convertAndSum(12, "30")
+	fmt.Println("Soma convertida:", total, err)
+}
+
 func hello(nome string) {
 	fmt.Println("Hello", nome, "!")
 }
@@ -24,13 +33,4 @@ func convertAndSum(a int, b string) (total int, err error) {
 	}
 	total = a + i
 	return
-}
-
-func main() {
-	hello("Mateus Ramos")
-
-	fmt.Println("Soma:", sum(12, 20))
-
-	total, err := convertAndSum(12, "30")
-	fmt.Println("Soma convertida:", total, err)
 }
